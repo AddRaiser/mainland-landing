@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mainland</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400&display=swap');
 
@@ -34,13 +35,15 @@
         .logo {
             width: 100%;
             max-width: 500px;
-            height: auto;
+            height: 100px;
+            object-fit: cover;
             margin-bottom: 25px;
             filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.1));
         }
 
         .description {
-            font-size: 1rem;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
             line-height: 1.5;
             margin-bottom: 40px;
             color: #b0b0b0;
@@ -60,6 +63,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 10px;
             padding: 16px 20px;
             text-decoration: none;
             color: #ffffff;
@@ -78,6 +82,10 @@
             border-color: rgba(255, 255, 255, 0.4);
             box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
             transform: translateY(-2px);
+        }
+
+        .link-btn i {
+            font-size: 1.3rem;
         }
 
         @media (max-width: 600px) {
@@ -111,10 +119,18 @@
     </p>
 
     <div class="links-grid">
-        <a href="https://store.steampowered.com/app/2304360/Mainland/" target="_blank" class="link-btn">Steam</a>
-        <a href="https://discord.gg/ZkU7gN6ZMt" target="_blank" class="link-btn">Discord</a>
-        <a href="#" target="_blank" class="link-btn">Instagram</a>
-        <a href="#" target="_blank" class="link-btn">TikTok</a>
+        <a href="https://store.steampowered.com/app/2304360/Mainland/" target="_blank" class="link-btn">
+            <i class="fa-brands fa-steam"></i> Steam
+        </a>
+        <a href="https://discord.gg/ZkU7gN6ZMt" target="_blank" class="link-btn">
+            <i class="fa-brands fa-discord"></i> Discord
+        </a>
+        <a href="#" target="_blank" class="link-btn">
+            <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+        <a href="#" target="_blank" class="link-btn">
+            <i class="fa-brands fa-tiktok"></i> TikTok
+        </a>
     </div>
 </div>
 </body>
